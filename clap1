@@ -1,19 +1,28 @@
+#Program to take input from user and then print the same using switch case(nested)
 #include <stdio.h>
-long factorial(int n)
-{  
-    if(n==0)
-       return 1;
-    else
-       return(n*factorial(n-1));
+int main() 
+{
+    int ID = 500;
+    int password = 365;
+    printf("Plese Enter Your ID:\n ");
+    scanf("%d", & ID);
+    switch (ID) 
+    {
+        case 500:
+            printf("Enter your password:\n ");
+            scanf("%d", & password);
+            switch (password) 
+            {
+                case 365:
+                    printf("Welcome Dear Programmer.\n");
+                    break;
+                default:
+                    printf("Incorrect Password.");
+                    break;
+             }
+            break;
+         default:
+             printf("Incorrect ID");
+             break;
+      }
 }
-int main()
-{   
-    int number;
-    long fact;
-    printf("Enter a number:");
-    scanf("%d",&number);
-    
-    fact=factorial(number);
-    printf("Factorial of %d is %ld\n",number,fact);
-    return 0;
-} 
