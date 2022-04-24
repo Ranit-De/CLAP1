@@ -2,27 +2,27 @@
 #include <stdio.h>
 int main() 
 {
-    int ID = 500;
+    int ID = 500;  #initialisation of variables
     int password = 365;
-    printf("Plese Enter Your ID:\n ");
+    printf("Plese Enter Your ID:\n ");  #Taking input from user
     scanf("%d", & ID);
-    switch (ID) 
+    switch (ID)   #Switching begins
     {
-        case 500:
+        case 500:   #Taking input
             printf("Enter your password:\n ");
             scanf("%d", & password);
             switch (password) 
             {
-                case 365:
+                case 365:  #nested switch begins
                     printf("Welcome Dear Programmer.\n");
                     break;
-                default:
+                default:   #Matching is done
                     printf("Incorrect Password.");
                     break;
              }
-            break;
-         default:
+            break; 
+         default:   #If none of the above case matches
              printf("Incorrect ID");
              break;
-      }
-}
+      } #end of method
+}  #end of class 
